@@ -27,9 +27,11 @@ function ExpenseForm(props) {
             amount: enteredAmount,
             date: new Date(enteredDate)
         }
-        console.log(expenseData)
+        //
         props.onSaveExpenseData(expenseData)
-        setEnteredTitle('') // 2 way binding. clears input field
+
+        // 2 way binding. clears input field
+        setEnteredTitle('')
         setEnteredAmount('')
         setEnteredDate('')
     };
